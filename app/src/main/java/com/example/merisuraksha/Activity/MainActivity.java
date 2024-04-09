@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         iconDomainArrayList.add(new IconDomain("Help","helpline"));
         iconDomainArrayList.add(new IconDomain("Live location","location"));
         iconDomainArrayList.add(new IconDomain("Emergency SOS","emergency"));
-        iconDomainArrayList.add(new IconDomain("Siren","ic_siren_new"));
+        iconDomainArrayList.add(new IconDomain("Siren","alarm"));
         iconDomainArrayList.add(new IconDomain("News","newspaper"));
         iconDomainArrayList.add(new IconDomain("Chatbot","conversation"));
         iconAdapter = new IconAdapter(iconDomainArrayList);

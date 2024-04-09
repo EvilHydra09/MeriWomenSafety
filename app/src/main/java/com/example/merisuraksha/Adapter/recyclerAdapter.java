@@ -56,11 +56,18 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.Messag
             holder.receivedLayout.setVisibility(LinearLayout.GONE);
         }
         else{
-            //Message is received
             holder.receivedLayout.setVisibility(LinearLayout.VISIBLE);
-            holder.receivedText.setText(message);
-            // Set visibility as GONE to remove the space taken up
+
+// Replace "\n" with actual newline character
+            String formattedMessage = message.replace("\\n", "\n");
+
+// Set the text of receivedText with newline characters properly displayed
+            holder.receivedText.setSingleLine(false); // Allow multiple lines
+            holder.receivedText.setText(formattedMessage);
+
+// Set visibility as GONE to remove the space taken up
             holder.sentLayout.setVisibility(LinearLayout.GONE);
+
         }
     }
 

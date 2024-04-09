@@ -18,6 +18,8 @@ import com.example.merisuraksha.Activity.HealthNews;
 import com.example.merisuraksha.Activity.Magnetometer;
 import com.example.merisuraksha.Activity.MagnoInst;
 import com.example.merisuraksha.Activity.MapsActivity;
+import com.example.merisuraksha.Activity.SirenActivity;
+import com.example.merisuraksha.Activity.SmsActivity;
 import com.example.merisuraksha.Domain.IconDomain;
 import com.example.merisuraksha.R;
 
@@ -61,14 +63,14 @@ public class IconAdapter extends RecyclerView.Adapter<IconAdapter.ViewHolder> {
                     intent = new Intent(context, MapsActivity.class);
                     context.startActivity(intent);
                     break;
-////                case 3:
-////                    intent = new Intent(context, .class);
-////                    context.startActivity(intent);
-////                    break;
-////                case 4:
-////                    intent = new Intent(context, .class);
-////                    context.startActivity(intent);
-////                    break;
+                case 3:
+                    intent = new Intent(context, SmsActivity.class);
+                    context.startActivity(intent);
+                    break;
+                case 4:
+                    intent = new Intent(context, SirenActivity.class);
+                    context.startActivity(intent);
+                    break;
                 case 5:
                     intent = new Intent(context, HealthNews.class);
                     context.startActivity(intent);
